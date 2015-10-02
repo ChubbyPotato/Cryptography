@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Suhan Gui
-Credit: Stack Overflow
+Credit: 
 
 Assignment: Cryptography
 
@@ -14,16 +14,18 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 for x in doge:
-    if doge=="q":
+    if x=="q":
         print("Goodbye!")
-    elif doge=="e":
+    elif x=="e":
         potato=input("Message: ")
-        bro=input("Key: ")
-        print(encrypt)
-    elif doge=="d":
-        tomato=input("Message: ")
-        bruh=input("Key: ")
-        print(encrypt)
+        input("Key: ")
+        #print(encrypt"="coded)
+        #encrypt=
+    elif x=="d":
+        obama=input("Message: ")
+        input("Key: ")
+        #print(decrypt"="decoded)
+        #decrypt=
     else:
         print("Did not understand command, try again.")
     doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
