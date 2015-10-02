@@ -16,13 +16,14 @@ doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 for x in doge:
     if doge=="q":
         print("Goodbye!")
-        elif doge=="e":
-            putin=input("Message: ")
-            print("Key: Lorem ipsum")
-           # print(encrypt)
-            elif doge=="d":
-                obama=input("Message: ")
-                print("Key: Lorem ipsum")
-                #print(encrypt)
-                else:
-                    print("Did not understand command, try again.")
+    elif doge=="e":
+        potato=input("Message: ")
+        bro=input("Key: ")
+        print(encrypt)
+    elif doge=="d":
+        tomato=input("Message: ")
+        bruh=input("Key: ")
+        print(encrypt)
+    else:
+        print("Did not understand command, try again.")
+    doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
