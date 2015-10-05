@@ -16,13 +16,14 @@ doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 for x in doge:
     if x=="q":
         print("Goodbye!")
+        break
     elif x=="e":
         potato=input("Message: ")
         input("Key: ")
         #print(encrypt"="coded)
         #encrypt=
     elif x=="d":
-        obama=input("Message: ")
+        tomato=input("Message: ")
         input("Key: ")
         #print(decrypt"="decoded)
         #decrypt=
