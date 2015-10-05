@@ -11,22 +11,22 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
-doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-for x in doge:
+x = ""
+while x != "q":
+    doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if x=="q":
         print("Goodbye!")
         break
     elif x=="e":
         potato=input("Message: ")
-        input("Key: ")
-        #print(encrypt"="coded)
+        Key=input("Key: ")
+        #print("{0} = {1}\n".format(potato,encrypt))
         #encrypt=
     elif x=="d":
         tomato=input("Message: ")
-        input("Key: ")
-        #print(decrypt"="decoded)
+        key=input("Key: ")
+        #print("{0} = {1}\n".format(tomato,decrypt))
         #decrypt=
     else:
-        print("Did not understand command, try again.")
-    doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
+        print("Did not understand command, try again.\n")
