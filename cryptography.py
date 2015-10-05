@@ -15,18 +15,18 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 x = ""
 while x != "q":
     doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
-    if x=="q":
+    if doge=="q":
         print("Goodbye!")
         break
-    elif x=="e":
+    elif doge=="e":
         potato=input("Message: ")
         Key=input("Key: ")
-        #print("{0} = {1}\n".format(potato,encrypt))
-        #encrypt=
-    elif x=="d":
+        print("{0} = {1}\n".format(potato,encrypt))
+        encrypt=
+    elif doge=="d":
         tomato=input("Message: ")
         key=input("Key: ")
-        #print("{0} = {1}\n".format(tomato,decrypt))
-        #decrypt=
+        print("{0} = {1}\n".format(tomato,decrypt))
+        decrypt=
     else:
         print("Did not understand command, try again.\n")
