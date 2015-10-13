@@ -15,8 +15,9 @@ def doge(a,b):
     if a==b:
         return(b)
     elif a<b:
-        
-    elif a>b
+       return( 
+    elif a>b:
+        return({a:>b})
 x = ""
 while x != "q":
     doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
@@ -34,4 +35,4 @@ while x != "q":
         print("{0} = {1}".format(tomato,decrypt))
         decrypt=
     else:
-        print("Did not understand command, try again.\n")
+        print("Did not understand command, try again.")
