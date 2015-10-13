@@ -14,8 +14,9 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 def doge(a,b):
     if a==b:
         return(b)
-    elif 
-
+    elif a<b:
+        
+    elif a>b
 x = ""
 while x != "q":
     doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
