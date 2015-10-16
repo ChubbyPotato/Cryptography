@@ -11,13 +11,6 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
-def doge(a,b):
-    if a==b:
-        return(b)
-    elif a<b:
-       return( 
-    elif a>b:
-        return({a:>b})
 x = ""
 while x != "q":
     doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
