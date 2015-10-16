@@ -22,14 +22,16 @@ while x != "q":
     elif doge=="e":
         potato=input("Message: ")
         Key=input("Key: ")
-        print("{0} = {1}".format(potato,str(encrypt)))
+        print("{0}".format(str(encrypt)))
         for x in associations:
-            encrypt="doge"
+            encrypt=
+            associations.find(char)
     elif doge=="d":
         tomato=input("Message: ")
         key=input("Key: ")
-        print("{0} = {1}".format(tomato,str(decrypt)))
+        print("{0}}".format(str(decrypt)))
         for x in associations:
-            decrypt="doge"
+            decrypt=
+            associations.find(char)
     else:
         print("Did not understand command, try again.")
