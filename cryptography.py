@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Suhan Gui
-Credit: None
+Credit: Stack Overflow
 
 Assignment: Cryptography
 
