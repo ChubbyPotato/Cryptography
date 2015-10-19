@@ -20,18 +20,17 @@ while x != "q":
     elif doge=="e":
         potato=input("Message: ")
         key=input("Key: ")
-        print(encrypt)
         for x in potato:
-            associations.find(x)
+            a=associations.find(x)
         for x in key:
-            associations.find(x)
+            b=associations.find(x)
     elif doge=="d":
         POTATO=input("Message: ")
         KEY=input("Key: ")
-        print(decrypt)
         for x in POTATO:
-            associations.find(x)
+            A=associations.find(x)
         for x in KEY:
-            associations.find(x)
+            B=associations.find(x)
+            
     else:
         print("Did not understand command, try again.")
