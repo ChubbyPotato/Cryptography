@@ -22,11 +22,12 @@ while x != "q":
     elif doge=="e":
         potato=input("Message: ")
         Key=input("Key: ")
-        print("{0}".format(encrypt))
-        for x in potato:
-            encrypt=(b)
+        a = str(c)
+        b = dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato))
+        c = list(b.items())
 #            b=str(associations.find(a))
 #            a="a"
+        print(a)
     elif doge=="d":
         tomato=input("Message: ")
         key=input("Key: ")
