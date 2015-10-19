@@ -23,11 +23,11 @@ while x != "q":
         a_list=[]
         b_list=[]
         for x in potato:
-            a=associations.find(x)
-            print(a)
+            a_list.append(associations.find(x))
+            print(a_list)
         for x in key:
-            b=associations.find(x)
-            print(b)
+            b_list.append(associations.find(x))
+            print(b_list)
     elif doge=="d":
         POTATO=input("Message: ")
         KEY=input("Key: ")
