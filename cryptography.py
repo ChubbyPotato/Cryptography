@@ -30,8 +30,7 @@ while x != "q":
             
         else:
             
-        encrypt=
-        
+        encrypt=[x+y for x, y in zip(A_list, B_list)]
     elif doge=="d":
         POTATO=input("Message: ")
         KEY=input("Key: ")
@@ -45,7 +44,6 @@ while x != "q":
             
         else:
             
-        decrypt=
-        AB_list = A_list-B_list
+        decrypt=[x-y for x, y in zip(A_list, B_list)]
     else:
         print("Did not understand command, try again.")
