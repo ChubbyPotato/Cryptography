@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Suhan Gui
-Credit: Stack Overflow
+Credit: http://stackoverflow.com/questions/1720421/join-two-lists-in-python
 
 Assignment: Cryptography
 
@@ -24,18 +24,23 @@ while x != "q":
         b_list=[]
         for x in potato:
             a_list.append(associations.find(x))
-            print(a_list)
         for x in key:
             b_list.append(associations.find(x))
-            print(b_list)
+        if len(a_list) > len(b_list):
+
+        ab_list = a_list + b_list
+        
     elif doge=="d":
         POTATO=input("Message: ")
         KEY=input("Key: ")
         A_list=[]
         B_list=[]
         for x in POTATO:
-            A=associations.find(x)
+            A_list.append(associations.find(x))
         for x in KEY:
-            B=associations.find(x)
+            B_list.append(associations.find(x))
+        if len(a_list) > len(b_list):
+          
+        AB_list = A_list-B_list
     else:
         print("Did not understand command, try again.")
