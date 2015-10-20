@@ -27,10 +27,14 @@ while x != "q":
         for x in key:
             b_list.append(associations.find(x))
         if len(a_list) > len(b_list):
-            
-        else:
-            
-        encrypt=[x+y for x, y in zip(A_list, B_list)]
+            ab_list=list(zip(
+        elif len(a_list) < len(b_list):
+            ab_list=list(zip(
+        elif len(a_list) = len(b_list):
+            ab_list=list(zip(A_list,B_list)
+        encrypt=[x+y for x, y in ab_list]
+        for x in decrypt:
+            print(x, end="")
     elif doge=="d":
         POTATO=input("Message: ")
         KEY=input("Key: ")
@@ -40,10 +44,14 @@ while x != "q":
             A_list.append(associations.find(x))
         for x in KEY:
             B_list.append(associations.find(x))
-        if len(a_list) > len(b_list):
-            
-        else:
-            
-        decrypt=[x-y for x, y in zip(A_list, B_list)]
+        if len(A_list) > len(B_list):
+            AB_list=list(zip(
+        elif len(A_list) < len(B_list):
+            AB_list=list(zip(
+        elif len(a_list) == len(b_list):
+            AB_list=list(zip(A_list,B_list))
+        decrypt=[x-y for x, y in AB_list]
+        for x in decrypt:
+            print(x, end="")
     else:
         print("Did not understand command, try again.")
