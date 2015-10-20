@@ -31,7 +31,7 @@ while x != "q":
             ab_list=zip(a_list,bb_list)
             encrypt=[x+y for x, y in ab_list]
             for x in encrypt:
-                print(x,end=""))
+                print(x,end="")
             print("")
         else:
             ddivide=len(b_list)/len(a_list)
@@ -39,8 +39,8 @@ while x != "q":
             ab_list=zip(aa_list,b_list)
             encrypt=[x+y for x, y in ab_list]
             for x in encrypt:
-                print(x,end=""))
-            print("")
+                print(x,end="")
+            print("\n")
     elif doge=="d":
         POTATO=input("Message: ")
         KEY=input("Key: ")
@@ -53,12 +53,17 @@ while x != "q":
         if len(A_list) > len(B_list):
             DIVIDE=len(A_list)/len(b_list)
             BB_list=b_list*DIVIDE
+            decrypt=[x-y for x, y in AB_list]
+            for x in decrypt:
+                print(x,end="")
+            print("\n")
         else:
-            DDIVIDE
-        AB_list= zip(A_list,BB_list)
-        decrypt=[x-y for x, y in AB_list]
-        for x in decrypt:
-            print(x,end="")
-        print("")
+            DDIVIDE=len(B_list)/len(A_list)
+            BB_list=B_list*DDIVIDE
+            AB_list= zip(A_list,BB_list)
+            decrypt=[x-y for x, y in AB_list]
+            for x in decrypt:
+                print(x,end="")
+            print("\n")
     else:
         print("Did not understand command, try again.")
