@@ -26,15 +26,21 @@ while x != "q":
         for x in key:
             b_list.append(associations.find(x))
         if len(a_list) > len(b_list):
-            for x in ab_list:
-                a_list*x==b_list
-        elif len(a_list) < len(b_list):
-            ab_list=
+            divide=len(a_list)/len(a_list)
+            bb_list=divide*b_list
+            ab_list=zip(a_list,bb_list)
+            encrypt=[x+y for x, y in ab_list]
+            for x in encrypt:
+                print(x,end=""))
+            print("")
         else:
-            ab_list=list(zip(A_list,B_list)
-        encrypt=[x+y for x, y in ab_list]
-        for x in encrypt:
-            print(x, end="")
+            ddivide=len(b_list)/len(a_list)
+            aa_list=ddivide*a_list
+            ab_list=zip(aa_list,b_list)
+            encrypt=[x+y for x, y in ab_list]
+            for x in encrypt:
+                print(x,end=""))
+            print("")
     elif doge=="d":
         POTATO=input("Message: ")
         KEY=input("Key: ")
@@ -45,13 +51,14 @@ while x != "q":
         for x in KEY:
             B_list.append(associations.find(x))
         if len(A_list) > len(B_list):
-            AB_list=
-        elif len(A_list) < len(B_list):
-            AB_list=list(zip(
+            DIVIDE=len(A_list)/len(b_list)
+            BB_list=b_list*DIVIDE
         else:
-            AB_list=list(zip(A_list,B_list))
+            DDIVIDE
+        AB_list= zip(A_list,BB_list)
         decrypt=[x-y for x, y in AB_list]
         for x in decrypt:
-            print(x, end="")
+            print(x,end="")
+        print("")
     else:
         print("Did not understand command, try again.")
