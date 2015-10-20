@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Suhan Gui
-Credit: http://stackoverflow.com/questions/1720421/join-two-lists-in-python
+Credit: http://stackoverflow.com/questions/14050824/add-sum-of-values-of-two-lists-into-new-list
 
 Assignment: Cryptography
 
