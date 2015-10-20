@@ -13,6 +13,7 @@ x = ""
 while x != "q":
     doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
     associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
+    fin=9000*associations
     if doge=="q":
         print("Goodbye!")
         break
@@ -36,7 +37,7 @@ while x != "q":
             ab_list=zip(aa_list,b_list)
             encrypt=[x+y for x, y in ab_list]
         for x in encrypt:
-            print(x,end="")
+            print(fin[x],end="")
         print("\n")
     elif doge=="d":
         POTATO=input("Message: ")
@@ -58,7 +59,7 @@ while x != "q":
             AB_list= zip(A_list,BB_list)
             decrypt=[x-y for x, y in AB_list]
         for x in decrypt:
-            print(x,end="")
+            print(fin[x],end="")
         print("\n")
     else:
         print("Did not understand command, try again.")
