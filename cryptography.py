@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Suhan Gui
-Credit: http://stackoverflow.com/questions/14050824/add-sum-of-values-of-two-lists-into-new-list
+Credit:None
 
 Assignment: Cryptography
 
@@ -30,17 +30,14 @@ while x != "q":
             bb_list=divide*b_list
             ab_list=zip(a_list,bb_list)
             encrypt=[x+y for x, y in ab_list]
-            for x in encrypt:
-                print(x,end="")
-            print("")
         else:
             ddivide=len(b_list)/len(a_list)
             aa_list=ddivide*a_list
             ab_list=zip(aa_list,b_list)
             encrypt=[x+y for x, y in ab_list]
-            for x in encrypt:
-                print(x,end="")
-            print("\n")
+        for x in encrypt:
+            print(x,end="")
+        print("\n")
     elif doge=="d":
         POTATO=input("Message: ")
         KEY=input("Key: ")
@@ -55,16 +52,13 @@ while x != "q":
             BB_list=b_list*DIVIDE
             AB_list= zip(A_list, BB_list)
             decrypt=[x-y for x, y in AB_list]
-            for x in decrypt:
-                print(x,end="")
-            print("\n")
         else:
             DDIVIDE=len(B_list)/len(A_list)
             BB_list=B_list*DDIVIDE
             AB_list= zip(A_list,BB_list)
             decrypt=[x-y for x, y in AB_list]
-            for x in decrypt:
-                print(x,end="")
-            print("\n")
+        for x in decrypt:
+            print(x,end="")
+        print("\n")
     else:
         print("Did not understand command, try again.")
