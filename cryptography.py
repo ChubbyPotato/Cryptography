@@ -13,7 +13,7 @@ x = ""
 while x != "q":
     doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
     associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
-    fin=9000*associations #OVVVEERRRR 9000!!!!!!
+    fin=9000*associations
     if doge=="q":
         print("Goodbye!")
         break
@@ -29,7 +29,7 @@ while x != "q":
         if len(a_list) > len(b_list):
             divide=len(a_list)/len(b_list)
             bb_list=divide*b_list
-            ab_list=zip(bb_list,a_list)
+            ab_list=zip(a_list,bb_list)
             encrypt=[x+y for x, y in ab_list]
         else:
             ddivide=len(b_list)/len(a_list)
@@ -49,8 +49,10 @@ while x != "q":
         for x in KEY:
             B_list.append(associations.find(x))
         if len(A_list) > len(B_list):
-            DIVIDE=len(A_list)/len(b_list)
-            BB_list=b_list*DIVIDE
+            DIVIDE=len(A_list)/len(B_list)
+            print(DIVIDE)
+            BB_list=B_list*DIVIDE
+            print(BB_list)
             AB_list= zip(A_list, BB_list)
             decrypt=[x-y for x, y in AB_list]
         else:
