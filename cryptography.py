@@ -53,11 +53,8 @@ while x != "q":
             B_list.append(associations.find(x))
         if len(A_list) > len(B_list):
             DIVIDE=float(len(A_list)/len(B_list))
-            print(DIVIDE)
             a=math.ceil(DIVIDE)
-            print(a)
             BB_list=B_list*a
-            print(BB_list)
             AB_list= zip(A_list, BB_list)
             decrypt=[x-y for x, y in AB_list]
         else:
