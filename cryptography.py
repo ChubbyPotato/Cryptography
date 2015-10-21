@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Suhan Gui
-Credit:None
+Credit:http://stackoverflow.com/questions/2356501/how-do-you-round-up-a-number-in-python
 
 Assignment: Cryptography
 
@@ -9,6 +9,7 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
+import math
 x = ""
 while x != "q":
     doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
@@ -28,12 +29,14 @@ while x != "q":
             b_list.append(associations.find(x))
         if len(a_list) > len(b_list):
             divide=len(a_list)/len(b_list)
-            bb_list=divide*b_list
+            a=math.ceil(divide)
+            bb_list=a*b_list
             ab_list=zip(a_list,bb_list)
             encrypt=[x+y for x, y in ab_list]
         else:
             ddivide=len(b_list)/len(a_list)
-            aa_list=ddivide*a_list
+            a=math.ceil(ddivide)
+            aa_list=a*a_list
             ab_list=zip(aa_list,b_list)
             encrypt=[x+y for x, y in ab_list]
         for x in encrypt:
@@ -49,15 +52,18 @@ while x != "q":
         for x in KEY:
             B_list.append(associations.find(x))
         if len(A_list) > len(B_list):
-            DIVIDE=len(A_list)/len(B_list)
+            DIVIDE=float(len(A_list)/len(B_list))
             print(DIVIDE)
-            BB_list=B_list*DIVIDE
+            a=math.ceil(DIVIDE)
+            print(a)
+            BB_list=B_list*a
             print(BB_list)
             AB_list= zip(A_list, BB_list)
             decrypt=[x-y for x, y in AB_list]
         else:
             DDIVIDE=len(B_list)/len(A_list)
-            AA_list=A_list*DDIVIDE
+            a=math.ceil(DDIVIDE)
+            AA_list=A_list*a
             AB_list= zip(AA_list,B_list)
             decrypt=[x-y for x, y in AB_list]
         for x in decrypt:
