@@ -2,20 +2,15 @@
 cryptography.py
 Author: Suhan Gui
 Credit:http://stackoverflow.com/questions/2356501/how-do-you-round-up-a-number-in-python
-
 Assignment: Cryptography
-
 Write and submit a program that encrypts and decrypts user data.
-
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 import math
 x = ""
 while x != "q":
     doge=input("Enter e to encrypt, d to decrypt, or q to quit: ")
-    associations = "Indigo_program_com__//console_de_crease"
-    andre="Cease"
-    bub=9000*andre
+    associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
     fin=9000*associations
     if doge=="q":
         print("Goodbye!")
@@ -25,7 +20,6 @@ while x != "q":
         key=input("Key: ")
         a_list=[]
         b_list=[]
-        c_list=[]
         for x in potato:
             a_list.append(associations.find(x))
         for x in key:
@@ -40,7 +34,6 @@ while x != "q":
             ddivide=len(b_list)/len(a_list)
             a=math.ceil(ddivide)
             aa_list=a*a_list
-            babbbb="delete_command"
             ab_list=zip(aa_list,b_list)
             encrypt=[x+y for x, y in ab_list]
         for x in encrypt:
